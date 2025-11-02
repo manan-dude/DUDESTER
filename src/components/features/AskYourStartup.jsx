@@ -34,7 +34,7 @@ export default function AskYourStartup() {
       const formData = new FormData();
       formData.append('file', file);
       
-      const response = await fetch(`http://localhost:8000/api/rag/upload`, {
+      const response = await fetch(`https://analysisbackend-production.up.railway.app/api/rag/upload`, {
         method: 'POST',
         body: formData,
       });
@@ -62,7 +62,7 @@ export default function AskYourStartup() {
   // Query RAG mutation
   const queryMutation = useMutation({
     mutationFn: async ({ collection_name, query }) => {
-      const response = await fetch(`http://localhost:8000/api/rag/query`, {
+      const response = await fetch(`https://analysisbackend-production.up.railway.app/api/rag/query`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

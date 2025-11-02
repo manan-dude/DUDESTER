@@ -24,7 +24,7 @@ export default function Layout({ children, darkMode, toggleDarkMode }) {
                 <Menu className="w-5 h-5" />
               </button>
               <h1 className="text-xl font-semibold text-[var(--color-text)]">
-                AI Analysis Platform
+                AI Analyst
               </h1>
             </div>
 

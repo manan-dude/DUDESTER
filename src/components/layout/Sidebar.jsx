@@ -4,14 +4,16 @@ import { LayoutDashboard, TrendingUp, Video, Sparkles, X,MessageSquare } from 'l
 import { motion, AnimatePresence } from 'framer-motion';
 const navItems = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
-  { to: '/competitor-analysis', icon: TrendingUp, label: 'Competitor Analysis' },
-  { to: '/video-pitch', icon: Video, label: 'Video Pitch Analyzer' },
   { to: '/ai-analyzer', icon: Sparkles, label: 'AI Analyzer' },
+  { to: '/competitor-analysis', icon: TrendingUp, label: 'Competitor Analysis' },
+ 
+  
   {
   to: '/ask-your-startup',
   icon: MessageSquare,  // from lucide-react
   label: 'Ask Your Startup',
-}
+},
+ { to: '/video-pitch', icon: Video, label: 'Video Pitch Analyzer' },
 
 ];
 
@@ -26,8 +28,8 @@ export default function Sidebar({ isOpen, onClose }) {
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h2 className="font-semibold text-[var(--color-text)]">AI Platform</h2>
-              <p className="text-xs text-gray-500">Analysis Suite</p>
+              <h2 className="font-semibold text-[var(--color-text)]">AI Analyst</h2>
+              <p className="text-xs text-gray-500">Invest safe with AI</p>
             </div>
           </div>
         </div>
